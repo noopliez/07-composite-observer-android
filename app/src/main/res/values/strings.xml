@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">07-composite-observer</string>
+    <string name="refresh_text">Refresh</string>
+	<string name="checkbox_text">Veggie only</string>
 </resources>

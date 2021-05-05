@@ -3,6 +3,7 @@ package de.thro.inf.prg3.a07.model;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -51,6 +52,11 @@ public class Meal {
     public void setNotes(List<String> notes) {
         this.notes = notes;
     }
+
+    public boolean isVegetarian() {
+    	return Arrays.asList(category.split(" ")).contains("Vegetarisch") ||
+			Arrays.asList(category.split(" ")).contains("Vegan");
+	}
 
     @Override
     public boolean equals(Object o) {
